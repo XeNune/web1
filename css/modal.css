@@ -1,0 +1,47 @@
+.black-text {
+    color: #ffffff; 
+}
+.modal-content {
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    background-color: #222;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Стиль для заголовка модального окна */
+.modal-title {
+    color: #fff;
+}
+
+/* Стиль для кнопок и текста внутри модального окна */
+.modal-body,
+.modal-footer,
+.cart-text p {
+    color: #fff;
+}
+
+/* Стиль для кнопки "add to cart" */
+.add-to-busket-btn {
+    background-color: #007BFF;
+    border-color: #007BFF;
+}
+
+/* Стиль для кнопок "+" и "-" */
+.add-to-busket-block .btn-plus,
+.add-to-busket-block .btn-minus {
+    background-color: #007BFF;
+    border-color: #007BFF;
+    color: #fff;
+}
+
+.btn-close {
+    background-color: #007BFF;
+    border-color: #007BFF;
+    color: #fff;
+}
+
+.add-to-busket-block .btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}

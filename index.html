@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Car Shop</title>
+    <title>CARS FOR LIFES</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/modal.css" rel="stylesheet">
     <script src="js/jquery.js"></script>
 
     <script src="js/bootstrap.min.js"></script>
@@ -21,7 +22,16 @@
         .cart-text {
           color: #111;
         }
-
+        img.png-image {
+            max-height: 200px;
+            width: auto;
+        }
+        img.size-down {
+          transform: scale(0.8);
+        }
+        img.size-up {
+          transform: scale(1.25);
+        }
         .thumbnail {
             border: 2px solid #007BFF;
             border-radius: 10px;
@@ -71,15 +81,12 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Car Shop</a>
+                <a class="navbar-brand" href="#">SHOP</a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
                         <a href="html/about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="html/services.html">Services</a>
                     </li>
                     <li>
                         <a href="html/contacts.html">Contact</a>
@@ -111,13 +118,13 @@
                             </ol>
                             <div class="carousel-inner">
                                 <div class="item active">
-                                    <img class="slide-image" src="https://ruseller.com/adds/adds2061/example/images/014.jpg" alt="">
+                                    <img class="slide-image" src="src/img/c1.jpeg" alt="">
                                 </div>
                                 <div class="item">
-                                    <img class="slide-image" src="https://baranovichi24.by/uploaded/thumbnails/6306404851869.jpg" alt="">
+                                    <img class="slide-image" src="src/img/c2.jpeg" alt="">
                                 </div>
                                 <div class="item">
-                                    <img class="slide-image" src="https://www.v-tuning.com.ua/images/sampledata/toyota/camry-xv70.jpg" alt="">
+                                    <img class="slide-image" src="src/img/c3.jpeg" alt="">
                                 </div>
                             </div>
                             <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
@@ -131,13 +138,13 @@
 
                 </div>
                 <div class="container">
-                  <h2 class="text-center">Наш качественный товар</h2>
+                  <h2 class="text-center">ВИТРИНА АВТО</h2>
               </div>
                 <div class="row">
 
-                    <div class="col-sm-4 col-lg-4 col-md-4">
+                    <div class="col-sm-4 col-lg-4 col-md-4 ">
                         <div class="thumbnail">
-                            <img src="https://www.kia-favorit.ru/upload/svg-preview/a75791aab7bf4fc2fa0b65fd09fd11d1_bodyB5C733_w350_h150_trim.jpg" alt="">
+                            <img src="src/img/kia_cheap.png" alt="" class="png-image size-down">
                             <div class="caption">
                                 <h4 class="pull-right">$2500.99</h4>
                                 <h4><a href="" data-toggle="modal" data-target="#FirstGoodModal">KIA cheap</a></h4>
@@ -157,7 +164,7 @@
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="https://www.kia-favorit.ru/upload/svg-preview/7e1394c493550fe764f85e060896aad9_body860B0B_w350_h150_trim.jpg" alt="">
+                            <img src="src/img/kia_medium.png" alt="" class="png-image size-up">
                             <div class="caption">
                                 <h4 class="pull-right">$3789.99</h4>
                                 <h4><a href="" data-toggle="modal" data-target="#SecondGoodModal">KIA Medium</a></h4>
@@ -178,7 +185,7 @@
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="https://www.kia-favorit.ru/upload/svg-preview/d03149db629a71152fc9bd9dee9ac789_body6D797B_w350_h150_trim.jpg" alt="">
+                            <img src="src/img/kia_react.png" alt="" class="png-image">
                             <div class="caption">
                                 <h4 class="pull-right">$4074.99</h4>
                                 <h4><a href="" data-toggle="modal" data-target="#ThirdGoodModal">KIA React</a></h4>
@@ -202,7 +209,7 @@
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="https://www.kia-favorit.ru/upload/svg-preview/b738eb10aee5360ed9fcb34c405ae543_body000000_w350_h150_trim.jpg" alt="">
+                            <img src="src/img/k9.png" alt="" class="png-image">
                             <div class="caption">
                                 <h4 class="pull-right">$10084.99</h4>
                                 <h4><a href="" data-toggle="modal" data-target="#FourthGoodModal">KIA k9</a>
@@ -224,7 +231,7 @@
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="https://woocar.ru/wp-content/uploads/2020/02/3-2.jpg" alt="">
+                            <img src="src/img/s-class.png" alt="" class="png-image">
                             <div class="caption">
                                 <h4 class="pull-right">$30094.99</h4>
                                 <h4><a href="" data-toggle="modal" data-target="#FifthGoodModal">Mercedes S-class</a>
@@ -246,7 +253,7 @@
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="https://st.automobilemag.com/uploads/sites/10/2015/11/2012-bmw-x5-m-suv-side-view.png" alt="" class="custom-image">
+                            <img src="src/img/x5.png" alt="" class="png-image">
                             <div class="caption">
                                 <h4 class="pull-right">$82500.99</h4>
                                 <h4><a href="" data-toggle="modal" data-target="#BMW5Model">BMW x5</a>
@@ -267,7 +274,7 @@
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="https://cdn.kodixauto.ru/media/image/6106fda8d0f62459a5b23521" alt="" class="custom-image">
+                            <img src="src/img/x6.png" alt="" class="png-image">
                             <div class="caption">
                                 <h4 class="pull-right">$92500.99</h4>
                                 <h4><a href="" data-toggle="modal" data-target="#BMW6Model">BMW x6</a>
@@ -288,7 +295,7 @@
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="https://www.mountox.com/assets/images/products/108/tesla-cybertruck-front.png" alt="" class="custom-image">
+                            <img src="src/img/cybertruck.png" alt="" class="png-image size-up">
                             <div class="caption">
                                 <h4 class="pull-right">$100789.99</h4>
                                 <h4><a href="" data-toggle="modal" data-target="#TeslaCybertruckModel">Tesla Cybertruck</a>
@@ -310,7 +317,7 @@
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="https://foto.carexpert.ru/img/foto1680/tesla/teslms021.jpg" alt="" class="custom-image">
+                            <img src="src/img/model-s.png" alt="" class="png-image size-up">
                             <div class="caption">
                                 <h4 class="pull-right">$40074.99</h4>
                                 <h4><a href="" data-toggle="modal" data-target="#TeslaSModel">Tesla Model S</a>
@@ -332,7 +339,7 @@
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="https://inv.assets.sincrod.com/ChromeMultiView/us/WHITE_2019TSC030003_1280_03.jpg" alt="" class="custom-image">
+                            <img src="src/img/model-3.png" alt="" class="png-image">
                             <div class="caption">
                                 <h4 class="pull-right">$30084.99</h4>
                                 <h4><a href="" data-toggle="modal" data-target="#Tesla3Model">Tesla Model 3</a>
@@ -354,7 +361,7 @@
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="https://avatars.mds.yandex.net/get-autoru-vos/1629149/fc20c4115282a84aab62084035d15391/1200x900n" alt="" class="custom-image">
+                            <img src="src/img/model-y.png" alt="" class="png-image">
                             <div class="caption">
                                 <h4 class="pull-right">$90094.99</h4>
                                 <h4><a href="" data-toggle="modal" data-target="#TeslaYModel">Tesla Model Y</a>
@@ -376,7 +383,7 @@
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="https://platform.cstatic-images.com/xlarge/in/v2/stock_photos/9d67de52-032b-4a8b-b56c-aed8ce398395/4105513f-8d34-4caf-a3e4-07fc3a99be21.png" alt="" class="custom-image">
+                            <img src="src/img/model-x.png" alt="" class="png-image">
                             <div class="caption">
                                 <h4 class="pull-right">$99500.99</h4>
                                 <h4><a href="" data-toggle="modal" data-target="#TwelveGoodModal">Tesla Model X</a>
@@ -421,7 +428,7 @@
     <!-- /.container -->
 	
     <div class="modal fade" id="FirstGoodModal">
-      <div class="modal-dialog modal-lg"> <!-- Увеличиваем размер модального окна для лучшего визуального эффекта -->
+      <div class="modal-dialog modal-lg">
           <div class="modal-content">
               <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -430,314 +437,374 @@
               <div class="modal-body">
                   <div class="row">
                       <div class="col-md-6">
-                          <img src="https://www.kia-favorit.ru/upload/svg-preview/a75791aab7bf4fc2fa0b65fd09fd11d1_bodyB5C733_w350_h150_trim.jpg" class="img-responsive" alt="KIA cheap">
+                          <img src="src/img/kia_cheap.png" class="img-responsive" alt="KIA cheap">
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-6 cart-text">
                           <p>Best Cheap Car for you and your family &hellip;</p>
                           <button class="btn btn-primary add-to-busket-btn"><span class="glyphicon glyphicon-shopping-cart"></span> add to cart </button>
                           <div class="add-to-busket-block">
                               <button class="btn btn-primary btn-minus">-</button>
                               <input class="form-control count-input" />
                               <button class="btn btn-primary btn-plus">+</button>
-                              <button class="btn btn-success"><span class="glyphicon glyphicon-ok ok-1"></span></button>
+                              <button class="btn btn-success"><span class="glyphicon glyphicon-ok ok-1 close" data-dismiss="modal"></span></span></button>
                           </div>
                       </div>
                   </div>
               </div>
               <div class="modal-footer">
                   <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
               </div>
           </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
 
-<div class="modal fade" id="SecondGoodModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">KIA Medium</h4>
-      </div>
-      <div class="modal-body">
-	  <img src="https://www.kia-favorit.ru/upload/svg-preview/7e1394c493550fe764f85e060896aad9_body860B0B_w350_h150_trim.jpg">
-        <p>Like cheap but more expencive &hellip;</p> 
-		<button class="btn-primary add-to-busket-btn"><span class="glyphicon glyphicon-shopping-cart"></span> add to cart </button>
-		<div class="add-to-busket-block">
-			<button class="btn-primary btn-minus">-</button>
-			<input class="form-control count-input" />
-			<button class="btn-primary btn-plus">+</button>
-			<button class="btn-success"><span class="glyphicon glyphicon-ok ok-2"></span></button>
-		</div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
+
+  <div class="modal fade" id="SecondGoodModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">KIA Medium</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="src/img/kia_medium.png" class="img-responsive" alt="KIA Medium">
+                    </div>
+                    <div class="col-md-6 cart-text">
+                        <p>Like cheap but more expencive &hellip;</p>
+                        <button class="btn btn-primary add-to-busket-btn"><span class="glyphicon glyphicon-shopping-cart"></span> add to cart </button>
+                        <div class="add-to-busket-block">
+                            <button class="btn btn-primary btn-minus">-</button>
+                            <input class="form-control count-input" />
+                            <button class="btn btn-primary btn-plus">+</button>
+                            <button class="btn btn-success"><span class="glyphicon glyphicon-ok ok-2 close" data-dismiss="modal"></span></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
-
-	<div class="modal fade" id="ThirdGoodModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">KIA React</h4>
-      </div>
-      <div class="modal-body">
-	  <img src="https://www.kia-favorit.ru/upload/svg-preview/d03149db629a71152fc9bd9dee9ac789_body6D797B_w350_h150_trim.jpg">
-        <p>More Speed More Power and More Buty &hellip;</p>
-		<button class="btn-primary add-to-busket-btn"><span class="glyphicon glyphicon-shopping-cart"></span> add to cart </button>
-		<div class="add-to-busket-block">
-			<button class="btn-primary btn-minus">-</button>
-			<input class="form-control count-input" />
-			<button class="btn-primary btn-plus">+</button>
-			<button class="btn-success"><span class="glyphicon glyphicon-ok ok-3"></span></button>
-		</div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div><!-- /.modal-content -->
+<div class="modal fade" id="ThirdGoodModal">
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">KIA React</h4>
+          </div>
+          <div class="modal-body">
+              <div class="row">
+                  <div class="col-md-6">
+                      <img src="src/img/kia_react.png" class="img-responsive" alt="KIA Medium">
+                  </div>
+                  <div class="col-md-6 cart-text">
+                      <p>More Speed More Power and More Buty &hellip;</p>
+                      <button class="btn btn-primary add-to-busket-btn"><span class="glyphicon glyphicon-shopping-cart"></span> add to cart </button>
+                      <div class="add-to-busket-block">
+                          <button class="btn btn-primary btn-minus">-</button>
+                          <input class="form-control count-input" />
+                          <button class="btn btn-primary btn-plus">+</button>
+                          <button class="btn btn-success"><span class="glyphicon glyphicon-ok ok-3 close" data-dismiss="modal"></span></span></button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
+          </div>
+      </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
 <div class="modal fade" id="FourthGoodModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">KIA k9</h4>
-      </div>
-      <div class="modal-body">
-	  <img src="https://www.kia-favorit.ru/upload/svg-preview/b738eb10aee5360ed9fcb34c405ae543_body000000_w350_h150_trim.jpg">
-        <p>Premium Car to become cool &hellip;</p>
-		<button class="btn-primary add-to-busket-btn"><span class="glyphicon glyphicon-shopping-cart"></span> add to cart </button>
-		<div class="add-to-busket-block">
-			<button class="btn-primary btn-minus">-</button>
-			<input class="form-control count-input" />
-			<button class="btn-primary btn-plus">+</button>
-			<button class="btn-success"><span class="glyphicon glyphicon-ok ok-4"></span></button>
-		</div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div><!-- /.modal-content -->
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">KIA k9</h4>
+          </div>
+          <div class="modal-body">
+              <div class="row">
+                  <div class="col-md-6">
+                      <img src="src/img/k9.png" class="img-responsive" alt="KIA Medium">
+                  </div>
+                  <div class="col-md-6 cart-text">
+                      <p>Premium Car to become cool &hellip;</p>
+                      <button class="btn btn-primary add-to-busket-btn"><span class="glyphicon glyphicon-shopping-cart"></span> add to cart </button>
+                      <div class="add-to-busket-block">
+                          <button class="btn btn-primary btn-minus">-</button>
+                          <input class="form-control count-input" />
+                          <button class="btn btn-primary btn-plus">+</button>
+                          <button class="btn btn-success"><span class="glyphicon glyphicon-ok ok-4 close" data-dismiss="modal"></span></span></button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
+          </div>
+      </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
+
 <div class="modal fade" id="FifthGoodModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Mercedes S-class</h4>
-      </div>
-      <div class="modal-body">
-	  <img src="https://woocar.ru/wp-content/uploads/2020/02/3-2.jpg">
-        <p>The coolest car in the world &hellip;</p>
-		<button class="btn-primary add-to-busket-btn"><span class="glyphicon glyphicon-shopping-cart"></span> add to cart </button>
-		<div class="add-to-busket-block">
-			<button class="btn-primary btn-minus">-</button>
-			<input class="form-control count-input" />
-			<button class="btn-primary btn-plus">+</button>
-			<button class="btn-success"><span class="glyphicon glyphicon-ok ok-5"></span></button>
-		</div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div><!-- /.modal-content -->
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Mercedes S-class</h4>
+          </div>
+          <div class="modal-body">
+              <div class="row">
+                  <div class="col-md-6">
+                      <img src="src/img/s-class.png" class="img-responsive" alt="KIA Medium">
+                  </div>
+                  <div class="col-md-6 cart-text">
+                      <p>The coolest car in the world &hellip;</p>
+                      <button class="btn btn-primary add-to-busket-btn"><span class="glyphicon glyphicon-shopping-cart"></span> add to cart </button>
+                      <div class="add-to-busket-block">
+                          <button class="btn btn-primary btn-minus">-</button>
+                          <input class="form-control count-input" />
+                          <button class="btn btn-primary btn-plus">+</button>
+                          <button class="btn btn-success"><span class="glyphicon glyphicon-ok ok-5 close" data-dismiss="modal"></span></span></button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
+          </div>
+      </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
 <div class="modal fade" id="BMW5Model">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">BMW x5</h4>
-      </div>
-      <div class="modal-body">
-      <img src="https://st.automobilemag.com/uploads/sites/10/2015/11/2012-bmw-x5-m-suv-side-view.png" height="400" width="550">
-        <p> &hellip;</p>
-        <button class="btn-primary add-to-busket-btn"><span class="glyphicon glyphicon-shopping-cart"></span> add to cart </button>
-        <div class="add-to-busket-block">
-            <button class="btn-primary btn-minus">-</button>
-            <input class="form-control count-input" />
-            <button class="btn-primary btn-plus">+</button>
-            <button class="btn-success"><span class="glyphicon glyphicon-ok ok-"></span></button>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div><!-- /.modal-content -->
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">BMW x5</h4>
+          </div>
+          <div class="modal-body">
+              <div class="row">
+                  <div class="col-md-6">
+                      <img src="src/img/x5.png" class="img-responsive" alt="KIA Medium">
+                  </div>
+                  <div class="col-md-6 cart-text">
+                      <p>Moderate BMW &hellip;</p>
+                      <button class="btn btn-primary add-to-busket-btn"><span class="glyphicon glyphicon-shopping-cart"></span> add to cart </button>
+                      <div class="add-to-busket-block">
+                          <button class="btn btn-primary btn-minus">-</button>
+                          <input class="form-control count-input" />
+                          <button class="btn btn-primary btn-plus">+</button>
+                          <button class="btn btn-success"><span class="glyphicon glyphicon-ok ok-6 close" data-dismiss="modal"></span></span></button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
+          </div>
+      </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
+
 <div class="modal fade" id="BMW6Model">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">BMW x6</h4>
-      </div>
-      <div class="modal-body">
-      <img src="https://cdn.kodixauto.ru/media/image/6106fda8d0f62459a5b23521" height="400" width="550">
-        <p> &hellip;</p>
-        <button class="btn-primary add-to-busket-btn"><span class="glyphicon glyphicon-shopping-cart"></span> add to cart </button>
-        <div class="add-to-busket-block">
-            <button class="btn-primary btn-minus">-</button>
-            <input class="form-control count-input" />
-            <button class="btn-primary btn-plus">+</button>
-            <button class="btn-success"><span class="glyphicon glyphicon-ok ok-8"></span></button>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div><!-- /.modal-content -->
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">BMW x6</h4>
+          </div>
+          <div class="modal-body">
+              <div class="row">
+                  <div class="col-md-6">
+                      <img src="src/img/x6.png" class="img-responsive" alt="KIA Medium">
+                  </div>
+                  <div class="col-md-6 cart-text">
+                      <p>Premium BMW &hellip;</p>
+                      <button class="btn btn-primary add-to-busket-btn"><span class="glyphicon glyphicon-shopping-cart"></span> add to cart </button>
+                      <div class="add-to-busket-block">
+                          <button class="btn btn-primary btn-minus">-</button>
+                          <input class="form-control count-input" />
+                          <button class="btn btn-primary btn-plus">+</button>
+                          <button class="btn btn-success"><span class="glyphicon glyphicon-ok ok-7 close" data-dismiss="modal"></span></span></button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
+          </div>
+      </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
 <div class="modal fade" id="TeslaCybertruckModel">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Tesla Cybertruck</h4>
-      </div>
-      <div class="modal-body">
-      <img src="https://www.mountox.com/assets/images/products/108/tesla-cybertruck-front.png" height="400" width="550">
-        <p> &hellip;</p>
-        <button class="btn-primary add-to-busket-btn"><span class="glyphicon glyphicon-shopping-cart"></span> add to cart </button>
-        <div class="add-to-busket-block">
-            <button class="btn-primary btn-minus">-</button>
-            <input class="form-control count-input" />
-            <button class="btn-primary btn-plus">+</button>
-            <button class="btn-success"><span class="glyphicon glyphicon-ok ok-9"></span></button>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div><!-- /.modal-content -->
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Tesla Cybertruck</h4>
+          </div>
+          <div class="modal-body">
+              <div class="row">
+                  <div class="col-md-6">
+                      <img src="src/img/cybertruck.png" class="img-responsive" alt="KIA Medium">
+                  </div>
+                  <div class="col-md-6 cart-text">
+                      <p>Premium Tesla &hellip;</p>
+                      <button class="btn btn-primary add-to-busket-btn"><span class="glyphicon glyphicon-shopping-cart"></span> add to cart </button>
+                      <div class="add-to-busket-block">
+                          <button class="btn btn-primary btn-minus">-</button>
+                          <input class="form-control count-input" />
+                          <button class="btn btn-primary btn-plus">+</button>
+                          <button class="btn btn-success"><span class="glyphicon glyphicon-ok ok-8 close" data-dismiss="modal"></span></span></button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
+          </div>
+      </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
 <div class="modal fade" id="TeslaSModel">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Tesla Model S</h4>
-      </div>
-      <div class="modal-body">
-      <img src="https://foto.carexpert.ru/img/foto1680/tesla/teslms021.jpg" height="400" width="550">
-        <p> &hellip;</p>
-        <button class="btn-primary add-to-busket-btn"><span class="glyphicon glyphicon-shopping-cart"></span> add to cart </button>
-        <div class="add-to-busket-block">
-            <button class="btn-primary btn-minus">-</button>
-            <input class="form-control count-input" />
-            <button class="btn-primary btn-plus">+</button>
-            <button class="btn-success"><span class="glyphicon glyphicon-ok ok-10"></span></button>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div><!-- /.modal-content -->
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Tesla Model S</h4>
+          </div>
+          <div class="modal-body">
+              <div class="row">
+                  <div class="col-md-6">
+                      <img src="src/img/model-s.png" class="img-responsive" alt="KIA Medium">
+                  </div>
+                  <div class="col-md-6 cart-text">
+                      <p>Premium Tesla &hellip;</p>
+                      <button class="btn btn-primary add-to-busket-btn"><span class="glyphicon glyphicon-shopping-cart"></span> add to cart </button>
+                      <div class="add-to-busket-block">
+                          <button class="btn btn-primary btn-minus">-</button>
+                          <input class="form-control count-input" />
+                          <button class="btn btn-primary btn-plus">+</button>
+                          <button class="btn btn-success"><span class="glyphicon glyphicon-ok ok-9 close" data-dismiss="modal"></span></span></button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
+          </div>
+      </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+
 
 <div class="modal fade" id="Tesla3Model">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Tesla Model 3</h4>
-      </div>
-      <div class="modal-body">
-      <img src="https://inv.assets.sincrod.com/ChromeMultiView/us/WHITE_2019TSC030003_1280_03.jpg" height="400" width="550">
-        <p> &hellip;</p>
-        <button class="btn-primary add-to-busket-btn"><span class="glyphicon glyphicon-shopping-cart"></span> add to cart </button>
-        <div class="add-to-busket-block">
-            <button class="btn-primary btn-minus">-</button>
-            <input class="form-control count-input" />
-            <button class="btn-primary btn-plus">+</button>
-            <button class="btn-success"><span class="glyphicon glyphicon-ok ok-11"></span></button>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div><!-- /.modal-content -->
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Tesla Model 3</h4>
+          </div>
+          <div class="modal-body">
+              <div class="row">
+                  <div class="col-md-6">
+                      <img src="src/img/model-3.png" class="img-responsive" alt="KIA Medium">
+                  </div>
+                  <div class="col-md-6 cart-text">
+                      <p>Premium Tesla &hellip;</p>
+                      <button class="btn btn-primary add-to-busket-btn"><span class="glyphicon glyphicon-shopping-cart"></span> add to cart </button>
+                      <div class="add-to-busket-block">
+                          <button class="btn btn-primary btn-minus">-</button>
+                          <input class="form-control count-input" />
+                          <button class="btn btn-primary btn-plus">+</button>
+                          <button class="btn btn-success"><span class="glyphicon glyphicon-ok ok-10 close" data-dismiss="modal"></span></span></button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
+          </div>
+      </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+
 
 <div class="modal fade" id="TeslaYModel">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Tesla Model Y</h4>
-      </div>
-      <div class="modal-body">
-      <img src="https://avatars.mds.yandex.net/get-autoru-vos/1629149/fc20c4115282a84aab62084035d15391/1200x900n" height="400" width="550">
-        <p> &hellip;</p>
-        <button class="btn-primary add-to-busket-btn"><span class="glyphicon glyphicon-shopping-cart"></span> add to cart </button>
-        <div class="add-to-busket-block">
-            <button class="btn-primary btn-minus">-</button>
-            <input class="form-control count-input" />
-            <button class="btn-primary btn-plus">+</button>
-            <button class="btn-success"><span class="glyphicon glyphicon-ok ok-12"></span></button>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div><!-- /.modal-content -->
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Tesla Model Y</h4>
+          </div>
+          <div class="modal-body">
+              <div class="row">
+                  <div class="col-md-6">
+                      <img src="src/img/model-y.png" class="img-responsive" alt="KIA Medium">
+                  </div>
+                  <div class="col-md-6 cart-text">
+                      <p>Premium Tesla &hellip;</p>
+                      <button class="btn btn-primary add-to-busket-btn"><span class="glyphicon glyphicon-shopping-cart"></span> add to cart </button>
+                      <div class="add-to-busket-block">
+                          <button class="btn btn-primary btn-minus">-</button>
+                          <input class="form-control count-input" />
+                          <button class="btn btn-primary btn-plus">+</button>
+                          <button class="btn btn-success"><span class="glyphicon glyphicon-ok ok-11 close" data-dismiss="modal"></span></span></button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
+          </div>
+      </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
+
 <div class="modal fade" id="TwelveGoodModal">
-    <div class="modal-dialog">
+  <div class="modal-dialog modal-lg">
       <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title">Tesla Model X</h4>
-        </div>
-        <div class="modal-body">
-        <img src="https://platform.cstatic-images.com/xlarge/in/v2/stock_photos/9d67de52-032b-4a8b-b56c-aed8ce398395/4105513f-8d34-4caf-a3e4-07fc3a99be21.png" width="550">
-          <p>&hellip;</p>
-          <button class="btn-primary add-to-busket-btn"><span class="glyphicon glyphicon-shopping-cart"></span> add to cart </button>
-          <div class="add-to-busket-block">
-              <button class="btn-primary btn-minus">-</button>
-              <input class="form-control count-input" />
-              <button class="btn-primary btn-plus">+</button>
-              <button class="btn-success"><span class="glyphicon glyphicon-ok ok-6"></span></button>
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Tesla Model X</h4>
           </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
+          <div class="modal-body">
+              <div class="row">
+                  <div class="col-md-6">
+                      <img src="src/img/model-x.png" class="img-responsive" alt="KIA Medium">
+                  </div>
+                  <div class="col-md-6 cart-text">
+                      <p>Premium Tesla &hellip;</p>
+                      <button class="btn btn-primary add-to-busket-btn"><span class="glyphicon glyphicon-shopping-cart"></span> add to cart </button>
+                      <div class="add-to-busket-block">
+                          <button class="btn btn-primary btn-minus">-</button>
+                          <input class="form-control count-input" />
+                          <button class="btn btn-primary btn-plus">+</button>
+                          <button class="btn btn-success"><span class="glyphicon glyphicon-ok ok-12 close" data-dismiss="modal"></span></span></button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
+          </div>
       </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 
 
 	<div class="modal fade" id="Cart">
@@ -747,9 +814,12 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title">Cart</h4>
       </div>
-      <div class="modal-body cart-body cart-text" >
-	
-      </div>
+      <h4 class="black-text">
+        <span class="cart-label">Модель:</span>
+        <span class="cart-label">Количество:</span> 
+        <span class="cart-label">Цена:</span>
+      </h4>
+      <div class="modal-body cart-body cart-text" ></div>
       <div class="modal-footer">
 	  		<button type="button" class="btn btn-default btn-close" OnClick="clearCart(); $('.cart-body').html('');"> Clear cart </button>
         <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>

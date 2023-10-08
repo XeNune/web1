@@ -7,7 +7,29 @@ body {
     align-items: center;
     padding: 10px 0; 
   }
+  .center-horizontal {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.centered-footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px; 
+    height: 100px; 
+    background-color: #242424; 
+    text-align: center; 
+    line-height: 100px;
+}
 
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .count-input {
 	width:10%;
 	display: inline;
@@ -46,8 +68,16 @@ body {
 }
 
 .slide-image {
-    width: 100%;
+   
+        max-width: 1500px;
+        max-height: 500px;
+        width: auto;
+        height: auto;
+    
+    display: block;
+    margin: 0 auto;
 }
+
 
 .carousel-holder {
     margin-bottom: 30px;
